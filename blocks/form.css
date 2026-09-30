@@ -1,0 +1,16 @@
+.form{
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--primary-color);
+}
+
+.form__container{
+}
+
+
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

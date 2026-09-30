@@ -1,0 +1,64 @@
+.business{
+    width: 100%;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.70), rgba(0, 0, 0, 0.70)), url(../assets/img/68a4978e091530f6b9ea52ff_PANOBIANCO_CAMPINAS-1011.avif);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.business__features{
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.business__title{
+    width: 80%;
+    line-height: 1.3rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+.business__item{
+    max-width: 80%;
+    padding: 1rem;
+    border-color: var(--primary-color);
+    border-radius: 12px;
+    border-style: double;
+    color: var(--secondary-color);
+}
+
+.business__img{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .business{
+        min-height: 100vh;
+    }
+
+    .business__features{
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
+    }
+
+    .business__title{
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+
+    .business__item{
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+}
