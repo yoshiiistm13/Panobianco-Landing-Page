@@ -17,8 +17,9 @@
 }
 
 .features__title{
+    padding-left: 1rem;
     width: 80%;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     color: var(--primary-color);
 }
 
@@ -29,7 +30,7 @@
 }
 
 .features__description{
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .features__item{
@@ -47,7 +48,9 @@
 
 .features__title-text{
     padding-top: 50px;
+    padding-bottom: 1rem;
     color: var(--primary-color);
+    
 }
 
 .features__cards{
@@ -91,6 +94,10 @@
 .features__card-bold{
     color: var(--primary-color);
     margin-top: 1rem;
+}
+
+.low{
+    font-size: 2rem;
 }
 
 

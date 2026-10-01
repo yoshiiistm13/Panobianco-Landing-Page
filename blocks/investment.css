@@ -1,0 +1,58 @@
+.investment{
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.investment__title{
+    margin: 0 auto;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+
+.investment__cards{
+
+}
+
+.investment__card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.investment__description{
+    color: var(--secondary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+.investment__card-title{
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+.investment__card-bold{
+    color: var(--secondary-color);
+    font-size: 4rem;
+}  
+
+.investment__card-bold span{
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.investment__card-title span{
+    color: var(--secondary-color);
+}
+
+br{
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    stroke-color: var(--primary-color);
+}
+
+.investment__card-description{
+    font-family: "Montserrat", sans-serif;
+    color: var(--secondary-color);
+}
