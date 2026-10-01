@@ -3,13 +3,13 @@
     width: 100%;
     padding: 20px 20px;
     background-color: rgb(0, 0, 0);
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .features__container{
 
     max-width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -17,11 +17,16 @@
 }
 
 .features__title{
-    padding-left: 1rem;
-    width: 80%;
+    padding-top: 3rem;
+    text-align: center;
+    margin: 0 auto;
+ 
     line-height: 1.5rem;
     color: var(--primary-color);
 }
+
+
+
 
 .features__bold{
     font-size: 2rem;
@@ -118,22 +123,30 @@
 
 @media (min-width: 1024px){
     .features{
-        max-width: 100%;
+        
         text-align: center;
         padding: 100px 0 ;
-        
+        margin: 0 auto;
     }
 
     .features__container{
+        width: 100%;
+        max-width: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 4rem;
+        justify-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 1rem;
+        
+        
     }
 
     .features__title {
         grid-column: 1 / -1;
         max-width: 1000px;
-        margin: 0 auto;  
+        margin: 0 auto; 
+        padding: 0; 
     }
 
     .features__item{
@@ -141,6 +154,50 @@
        width: 20rem;
        cursor: pointer;
     }
+
+    .features__bold{
+        font-size: 4rem;
+    }
+
+        .features__title-text{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .features__title-text h3{
+        font-size: 3rem;
+    }
+
+    .features__cards{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .features__card{
+        font-size: 2rem;
+    }
+
+    .features__card-img{
+        width: 3rem;
+    }
+
+    .features__description-text{
+        font-size: 1rem;
+    }
+
+    .features__card-description{
+        font-size: 1rem;
+    }
+
+    .features__item p{
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .features__img{
+        display: none;
+    }
+
+
 
     .features__item:hover{
         transform: translateY(-3px); /* Sube ligeramente */

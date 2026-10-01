@@ -1,58 +1,166 @@
-.investment{
-    padding: 20px 40px;
+.investment {
     width: 100%;
+    padding: 3rem 1.25rem 4rem;
 }
 
-.investment__title{
+.investment__cards-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
+}
+
+.investment__cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.investment__container {
+    padding: 1.25rem 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.investment__title {
+    margin: 0;
     color: var(--primary-color);
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+    font-size: clamp(1.7rem, 2.4vw, 2.8rem);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
 }
 
-
-.investment__cards{
-
+.investment__description {
+    color: var(--secondary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    max-width: 42rem;
 }
 
-.investment__card{
+.investment__card {
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
+    gap: 0.8rem;
+    padding: 1.5rem 1.25rem;
+    
 }
 
-.investment__description{
-    color: var(--secondary-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-}
-
-.investment__card-title{
+.investment__card-title {
     font-family: "Montserrat", sans-serif;
     color: var(--primary-color);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.investment__card-bold{
-    color: var(--secondary-color);
-    font-size: 4rem;
-}  
-
-.investment__card-bold span{
-    color: var(--primary-color);
-    font-size: 4rem;
-}
-
-.investment__card-title span{
+.investment__card-title span {
     color: var(--secondary-color);
 }
 
-br{
-    color: var(--primary-color);
-    background-color: var(--primary-color);
-    stroke-color: var(--primary-color);
+.investment__card-bold {
+    color: var(--secondary-color);
+    font-size: clamp(2.3rem, 3.6vw, 4rem);
+    line-height: 0.95;
 }
 
-.investment__card-description{
+.investment__card-bold span {
+    color: var(--primary-color);
+    font-size: inherit;
+}
+
+.investment__card-description {
     font-family: "Montserrat", sans-serif;
     color: var(--secondary-color);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.investment__img{
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .investment__cards-img {
+        grid-template-columns: 1.3fr 0.8fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .investment__cards {
+        order: 1;
+        gap: 1.2rem;
+    }
+
+    .investment__img {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    .investment__img img {
+        display: block;
+        width: min(100%, 22rem);
+        max-width: 100%;
+        height: auto;
+        border-radius: 1.25rem;
+        object-fit: cover;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+}
+
+@media (min-width: 1024px) {
+    .investment {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem 5rem;
+    }
+
+    .investment__card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .investment__container {
+        padding: 1.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .investment__cards-img {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .investment__title {
+        letter-spacing: 0.03em;
+    }
+
+    .investment__card {
+        padding: 1.25rem 1rem;
+    }
+
+    .investment__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        order: -1;
+    }
+
+    .investment__img img {
+        display: block;
+        width: min(100%, 22rem);
+        max-width: 100%;
+        height: auto;
+        border-radius: 1.25rem;
+        object-fit: cover;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
 }
