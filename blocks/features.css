@@ -7,9 +7,8 @@
 }
 
 .features__container{
-
     max-width: 100%;
-    padding-top: 20px;
+    padding: 3rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -17,12 +16,11 @@
 }
 
 .features__title{
-    padding-top: 3rem;
-    text-align: center;
-    margin: 0 auto;
- 
-    line-height: 1.5rem;
+    margin: 0;
     color: var(--primary-color);
+    font-size: clamp(1.7rem, 2.4vw, 2.8rem);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
 }
 
 
@@ -35,7 +33,7 @@
 }
 
 .features__description{
-    padding: 1rem 1rem;
+    
 }
 
 .features__item{
@@ -52,9 +50,10 @@
 }
 
 .features__title-text{
-    padding-top: 50px;
-    padding-bottom: 1rem;
-    color: var(--primary-color);
+    padding: 1.25rem 1rem;
+    display: grid;
+    gap: 1rem;
+    
     
 }
 
@@ -112,13 +111,7 @@
        
     }
     
-    .features__title{
-        font-size: 3rem;
-        line-height: 3rem;
-        margin: 0 auto;
-        padding: 5rem 0 0 2rem;
-        text-align: center;
-    }
+    
 }
 
 @media (min-width: 1024px){
@@ -145,8 +138,10 @@
     .features__title {
         grid-column: 1 / -1;
         max-width: 1000px;
-        margin: 0 auto; 
-        padding: 0; 
+        margin: 0; 
+        padding: 0;
+        text-align: start; 
+        
     }
 
     .features__item{
@@ -162,6 +157,7 @@
         .features__title-text{
         max-width: 80%;
         margin: 0 auto;
+        text-align: left;
     }
 
     .features__title-text h3{

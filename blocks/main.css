@@ -34,6 +34,33 @@ body{
     bottom: 20px;
     right: 20px;
     flex-shrink: 0;
+}
 
+
+.point{
+    width: 0.5rem;
+    height: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    animation: parpadear 1.5s infinite ease-in-out;
+}
+
+.small{
+    font-family: "Montserrat", sans-serif;
+    color: var(--secondary-color);
+}
+
+.title__small{
+    display: flex;
     
+    gap: 0.5rem; 
+}
+
+@keyframes parpadear{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
 }
