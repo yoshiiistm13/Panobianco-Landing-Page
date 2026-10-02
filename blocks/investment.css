@@ -1,9 +1,15 @@
 .investment {
     width: 100%;
     padding: 2rem 1.25rem 2rem;
+    padding: 1.25rem 1rem;
+    display: grid;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .investment__cards-img {
+    
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -18,9 +24,7 @@
 }
 
 .investment__container {
-    padding: 1.25rem 1rem;
-    display: grid;
-    gap: 1rem;
+    
 }
 
 .investment__title {
@@ -118,19 +122,19 @@
 
 @media (min-width: 1024px) {
     .investment {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 4rem 2rem 5rem;
+        max-width: 80%;
+        padding: 5rem 0;
     }
 
-    .investment__card {
-        padding: 1.75rem 1.5rem;
+    .investment__card{
+        padding: 1rem 0;
     }
 
-    .investment__container {
-        padding: 1.75rem 1.5rem;
+    .investment__img{
+        align-items: normal;
     }
-}
+
+ }
 
 @media (max-width: 767px) {
     .investment__cards-img {

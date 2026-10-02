@@ -118,7 +118,7 @@
     .features{
         
         text-align: center;
-        padding: 100px 0 ;
+        padding: 5rem 0  ;
         margin: 0 auto;
     }
 
@@ -127,12 +127,11 @@
         max-width: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: stretch;
         margin: 0 auto;
         gap: 1rem;
-        
-        
+        padding-bottom: 5rem; 
     }
 
     .features__title {
@@ -158,6 +157,7 @@
         max-width: 80%;
         margin: 0 auto;
         text-align: left;
+        padding-bottom: 4rem;
     }
 
     .features__title-text h3{
@@ -165,16 +165,31 @@
     }
 
     .features__cards{
+        width: 100%;
         max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch; /* Obliga a que todas las tarjetas midan lo mismo en altura */
         margin: 0 auto;
+        gap: 1.5rem;
+        
+        
     }
 
     .features__card{
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .features__card-bold{
+        font-size: 1.3rem;
     }
 
     .features__card-img{
-        width: 3rem;
+        width: 5rem;
+        height: 5rem;
+        flex-shrink: 0;
+        padding: 1rem;
     }
 
     .features__description-text{
