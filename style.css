@@ -2,4 +2,6 @@
 @import url(./blocks/hero.css);
 @import url(./blocks/features.css);
 @import url(./blocks/investment.css);
-@import url(./blocks/steps.css)
+@import url(./blocks/steps.css);
+@import url(./blocks/reviews.css);
+@import url(./blocks/form.css);

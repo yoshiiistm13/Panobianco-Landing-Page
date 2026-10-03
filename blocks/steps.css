@@ -73,10 +73,6 @@
     z-index: 1;
 }
 
-/* Ocultar la línea en el último paso */
-.steps__row:last-child .steps__number-col::after {
-    display: none;
-}
 
 /* Estilo de la tarjeta oscura de la derecha */
 .steps__card-content {
@@ -123,6 +119,13 @@
     letter-spacing: 0.5px;
 }
 
+@media(min-width:768px){
+    .steps{
+        padding: 2rem;
+}
+    }
+    
+
 @media (min-width:1024px){
   .steps{
     max-width: 80%;
@@ -130,8 +133,7 @@
     padding: 5rem 0;
   }
 
-  .steps__container{
-    padding: 0;
-    margin: 0;
+  .steps__title{
+    font-size: 3rem;
   }
 }

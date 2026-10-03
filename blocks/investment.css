@@ -9,7 +9,7 @@
 }
 
 .investment__cards-img {
-    
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -18,13 +18,19 @@
     align-items: center;
 }
 
+.investment__img{
+        padding: 1rem;
+    }
+
 .investment__cards {
     display: grid;
     gap: 1.5rem;
 }
 
 .investment__container {
-    
+    padding: 1.25rem 1rem;
+        display: grid;
+        gap: 1.0rem;
 }
 
 .investment__title {
@@ -90,6 +96,16 @@
 
 
 @media (min-width: 768px) {
+    .investment{
+        padding: 2rem;
+    }
+
+    .investment__container{
+        padding: 1.25rem 1rem;
+    display: grid;
+    gap: 1rem;
+    }
+
     .investment__cards-img {
         grid-template-columns: 1.3fr 0.8fr;
         gap: 4rem;
@@ -105,12 +121,13 @@
         order: 2;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: normal;
         min-height: 100%;
+        padding: 1rem;
     }
 
     .investment__img img {
-        display: block;
+        
         width: min(100%, 22rem);
         max-width: 100%;
         height: auto;
@@ -127,11 +144,15 @@
     }
 
     .investment__card{
-        padding: 1rem 0;
+        padding: 1rem 
     }
 
     .investment__img{
         align-items: normal;
+    }
+
+    .investment__title{
+        font-size: 3rem;
     }
 
  }

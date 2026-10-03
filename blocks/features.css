@@ -108,7 +108,18 @@
 @media (min-width: 768px){
 
     .features{
-       
+       padding: 2rem;
+    }
+
+    .features__container{
+        padding: 3rem 1rem;
+    }
+
+    .features__cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+        
     }
     
     
@@ -140,6 +151,7 @@
         margin: 0; 
         padding: 0;
         text-align: start; 
+        font-size: 3rem;
         
     }
 
