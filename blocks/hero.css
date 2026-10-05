@@ -52,13 +52,13 @@ margin: 0 auto;
 
 .header__button{
     background: none;
-    
     padding: 0.3rem;
     border-radius: 5px;
     border-style: double;
     color: var(--primary-color);
     border-color: var(--primary-color);
     font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
