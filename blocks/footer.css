@@ -111,6 +111,10 @@ span.contact__link {
     margin: 1rem 0;
 }
 
+.title__small-center{
+    margin: 0 auto;
+}
+
 @media (min-width:1024px){
     .footer{
         padding: 5rem 1.25rem;

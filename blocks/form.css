@@ -18,6 +18,15 @@
     margin: 0 auto;
 }
 
+.title__small-center {
+    display: flex;
+    align-items: center;     /* Centra verticalmente los puntos y el texto en una misma línea */
+    justify-content: center; /* Centra todo el conjunto horizontalmente en la pantalla */
+    gap: 5px;               /* Controla el espacio exacto de separación entre los puntos y el texto */
+}
+
+
+
 .form__title{
     margin: 0;
     color: var(--primary-color);
@@ -25,8 +34,8 @@
     line-height: 1.05;
 }
 
-.title__small{
-    margin: 0 auto;
+.title__small-center{
+       margin: 0 auto;
 }
 
 
