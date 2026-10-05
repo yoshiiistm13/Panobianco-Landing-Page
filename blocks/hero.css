@@ -59,6 +59,14 @@ margin: 0 auto;
     border-color: var(--primary-color);
     font-family: "Bebas Neue", sans-serif;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__button:hover {
+   color: var(--secondary-color); 
+    border-color: var(--secondary-color);
+  transform: translateY(-2px); /* Eleva el botón ligeramente */
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* Agrega una sombra sutil */
 }
 
 @media (min-width: 768px){
