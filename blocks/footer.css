@@ -112,7 +112,12 @@ span.contact__link {
 }
 
 @media (min-width:1024px){
+    .footer{
+        padding: 5rem 1.25rem;
+    }
+
     .footer__container{
+        width: 100%;
         max-width: 80%;
         margin: 0 auto;
     }

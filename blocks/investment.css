@@ -140,7 +140,14 @@
 @media (min-width: 1024px) {
     .investment {
         max-width: 80%;
+        width: 100%;
+        margin: 0 auto;
         padding: 5rem 0;
+    }
+
+    .investment__cards-img {
+        width: 100%;
+        max-width: none;
     }
 
     .investment__card{

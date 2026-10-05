@@ -129,27 +129,26 @@
     .features{
         max-width: 80%;
         width: 100%;
-        padding: 2rem 1.25rem;
+        padding: 5rem 0;
         text-align: center;
-        padding: 5rem 0  ;
         margin: 0 auto;
     }
 
     .features__container{
         width: 100%;
-        max-width: 80%;
+        max-width: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         align-items: stretch;
         margin: 0 auto;
         gap: 1rem;
-        padding-bottom: 5rem; 
+        padding-bottom: 0;
     }
 
     .features__title {
         grid-column: 1 / -1;
-        max-width: 1000px;
+        max-width: none;
         margin: 0; 
         padding: 0;
         text-align: start; 
@@ -159,7 +158,7 @@
 
     .features__item{
        padding: 1.5rem;
-       width: 20rem;
+       width: auto;
        cursor: pointer;
     }
 
@@ -167,8 +166,9 @@
         font-size: 4rem;
     }
 
-        .features__title-text{
-        max-width: 80%;
+    .features__title-text{
+        width: 100%;
+        max-width: none;
         margin: 0 auto;
         text-align: left;
         padding-bottom: 4rem;
@@ -180,7 +180,7 @@
 
     .features__cards{
         width: 100%;
-        max-width: 80%;
+        max-width: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: stretch; /* Obliga a que todas las tarjetas midan lo mismo en altura */

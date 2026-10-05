@@ -1,5 +1,4 @@
 .reviews{
-    max-width: 80%;
     margin: 0 auto;
     width: 100%;
     padding: 2rem 1.25rem;
@@ -116,6 +115,20 @@
 }
 
 @media (min-width:1024px){
+    .reviews{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+
+    .reviews__container,
+    .review__grid,
+    .review__cards-container,
+    .data__container{
+        width: 100%;
+        max-width: none;
+    }
+
     .reviews__title{
         font-size: 3rem;
     }
