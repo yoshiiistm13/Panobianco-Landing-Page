@@ -2,14 +2,14 @@
     max-width: 80%;
     margin: 0 auto;
     width: 100%;
-    padding: 2rem 1.25rem;
+    
 }
 
 .reviews__container{
     padding: 1.25rem 1rem;
     display: grid;
     gap: 1rem;
-    max-width: 1000px;
+    
     margin: 0 auto;
 }
 
@@ -94,6 +94,7 @@
     width: 100%;
     color: var(--secondary-color);
     font-size: 1rem;
+    
 }
 
 .number__bold{
@@ -101,10 +102,18 @@
     color: var(--primary-color);
 }
 
+.data__container:hover{
+    border-style: double;
+    border-color: var(--primary-color);
+}
+
+.review__cards-container:hover{
+    border-style: double;
+    border-color: var(--primary-color);
+}
+
 @media (min-width:768px){
-    .reviews{
-        padding: 2rem;
-    }
+  
 
     .review__cards-container{
         padding: 2rem;

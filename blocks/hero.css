@@ -118,6 +118,7 @@ margin: 0 auto;
 
     .header__container{
         gap: 40px;
+        padding-left: 2rem;
     }
 
     .header__logo{
