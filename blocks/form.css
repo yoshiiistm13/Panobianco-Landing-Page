@@ -58,6 +58,7 @@ background-color: rgb(27, 27, 27);
 border-radius: 12px;
 border-style: double;
 border-color: var(--primary-color);
+padding: 3rem 4rem;
 }
 
 .form__card label{
@@ -145,6 +146,23 @@ input::placeholder {
 
 .security{
     opacity: 0.8;
+}
+
+select{
+ background-color: var(--primary-color);
+}
+
+option{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+input::placeholder{
+    color: black;
+}
+
+select::placeholder{
+    color: #fff;
 }
 
 @media (min-width:768px){

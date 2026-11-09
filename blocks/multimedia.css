@@ -1,0 +1,105 @@
+.multimedia{
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.multimedia__container{
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.multimedia__title{
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+    line-height: 1.05;
+}
+
+.multimedia__text{
+    text-align: justify;
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.multimedia__video{
+    position: relative;
+    width: 100%;
+    max-width: 310px;
+    aspect-ratio: 9 / 16;
+    margin: 20px auto;
+    
+}
+
+.multimedia__video iframe{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; /* Esquinas redondeadas */
+  border: 2px solid var(--primary-color);
+
+}
+
+    @media (min-width:768px) {
+        .multimedia__video{
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .multimedia__video iframe{
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; /* Esquinas redondeadas */
+    border: 2px solid var(--primary-color);
+    }
+}
+
+@media (min-width:1024px) {
+    .multimedia__container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10rem !important;
+        align-items: center;
+        max-width: 1200px;
+        padding: 40px 20px;
+    }
+
+    .multimedia__title{
+        font-size: 4.5rem !important;
+        text-align: left;
+    }
+
+    .multimedia__text{ 
+    font-size: 2rem !important;
+    opacity: .8;
+    }
+
+         .multimedia__video{
+        position: relative;
+        width: 100%;
+        max-width: 1000px !important;
+        margin: 20px auto;
+    }
+
+    .multimedia__video iframe{
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; /* Esquinas redondeadas */
+    border: 2px solid var(--primary-color);
+    }
+}

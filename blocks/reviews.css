@@ -2,6 +2,9 @@
     max-width: 80%;
     margin: 0 auto;
     width: 100%;
+    padding: 2rem 0;
+    
+   
     
 }
 
@@ -28,6 +31,7 @@
     line-height: 1.7;
     max-width: 42rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .review__cards-container{

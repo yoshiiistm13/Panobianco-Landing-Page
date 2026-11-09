@@ -60,6 +60,7 @@ margin: 0 auto;
     font-family: "Bebas Neue", sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
 .header__button:hover {
