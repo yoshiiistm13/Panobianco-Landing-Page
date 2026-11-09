@@ -12,7 +12,7 @@
 
 .header__logo{
   
-    width: 15rem;
+    width: 18rem;
     display: block;
     margin: 0 auto;
     padding: 2rem;
@@ -123,7 +123,7 @@ margin: 0 auto;
     }
 
     .header__logo{
-        width: 15rem;
+        width: 20rem;
         margin: 0;
         
     }

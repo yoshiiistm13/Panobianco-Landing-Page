@@ -52,7 +52,7 @@
 .form__card{
 display: flex;
 flex-direction: column;
-padding: 2rem 0rem;
+padding: 2rem 1.5rem !important;
 gap: 0.2rem;
 background-color: rgb(27, 27, 27);
 border-radius: 12px;

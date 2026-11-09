@@ -95,7 +95,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1032px) {
     .investment{
         padding: 2rem;
     }
@@ -108,7 +108,7 @@
 
     .investment__cards-img {
         grid-template-columns: 1.3fr 0.8fr;
-        gap: 4rem;
+        gap: 2rem;
         align-items: center;
     }
 
