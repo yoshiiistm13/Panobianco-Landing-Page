@@ -67,17 +67,23 @@
 }
 
 @media (min-width:1024px) {
+
+    .multimedia{
+        max-width: 80%;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
     .multimedia__container{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 10rem !important;
         align-items: center;
-        max-width: 1200px;
-        padding: 40px 20px;
+        
     }
 
     .multimedia__title{
-        font-size: 4.5rem !important;
+        font-size: 3.56rem !important;
         text-align: left;
     }
 
