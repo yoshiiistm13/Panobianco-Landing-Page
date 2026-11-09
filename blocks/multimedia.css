@@ -64,6 +64,11 @@
     border-radius: 12px; /* Esquinas redondeadas */
     border: 2px solid var(--primary-color);
     }
+
+    .multimedia__text{
+        max-width: 80%;
+        text-align: center;
+    }
 }
 
 @media (min-width:1024px) {

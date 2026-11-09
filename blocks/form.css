@@ -52,7 +52,7 @@
 .form__card{
 display: flex;
 flex-direction: column;
-padding: 2rem 1.5rem;
+padding: 2rem 0rem;
 gap: 0.2rem;
 background-color: rgb(27, 27, 27);
 border-radius: 12px;
@@ -119,7 +119,7 @@ input::placeholder {
 }
 
 .input__capital{
-    color: #9ca3af;
+    color: #fafbfc;
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
@@ -178,9 +178,17 @@ select::placeholder{
     text-align: justify; 
     }
 
+    .security{
+        font-size: 1rem;
+    }
+
     .security__container img{
         
-        width: 4rem;
+        width: 3rem;
+    }
+
+    .form{
+        padding: 1rem 5rem;
     }
 }
 
