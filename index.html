@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W4GZX58P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panobianco Franqucias</title>
@@ -13,6 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4GZX58P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <a href="https://wa.me/5215552640888" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contactar por WhatsApp">
     </a>
@@ -294,8 +302,8 @@ LLENO DE OPORTUNIDADES</h4>
                     <p class="form__description">Completa tus datos y un asesor experto se pondrá en contacto contigo y explicarte los detalles de la franquicia Panobianco Gym.</p>
                 </div>
                 <div class="form__card-general">
-                    <form id="formulario__panobianco" class="form__card" name="panobianco-leads" method="POST" data-netlify="true">
-                        
+                    <form id="formulario__panobianco" class="form__card" name="panobianco-leads" method="POST" data-netlify="true" action="/gracias.html">
+
                         <!-- Campo oculto obligatorio para Netlify Forms -->
                         <input type="hidden" name="form-name" value="panobianco-leads" />
 
@@ -306,7 +314,7 @@ LLENO DE OPORTUNIDADES</h4>
                         <input id="mail" name="email" class="input__mail" type="email" required placeholder="carlos@empresa.com">
                         
                         <label for="tel">TELÉFONO / WHATSAPP (+52) *</label>
-                        <input id="tel" name="phone" class="input__tel" type="tel" required placeholder="+52 55 1234 5678">
+                        <input id="tel" name="phone" class="input__tel" type="number" required placeholder="+52 55 1234 5678">
                         
                         <label for="city">CIUDAD / ESTADO DE INTERÉS *</label>
                         <input id="city" name="city" class="input__city" type="text" required placeholder="Ej. CDMX, Puebla, Guadalajara, Monterrey">
