@@ -147,6 +147,7 @@
         padding: 5rem 0;
         text-align: center;
         margin: 0 auto;
+        background-color: #0C0C0C;
     }
 
     .features__container{
@@ -223,7 +224,7 @@
 
     .features__card-bold{
         font-size: 1.1rem;
-        font-family: serif;
+        font-family: Montserrat, "sans-serif";
         text-align: left;
     }
 
