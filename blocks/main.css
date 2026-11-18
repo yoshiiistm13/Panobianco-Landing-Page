@@ -120,3 +120,12 @@ body{
         opacity: 0.2;
     }
 }
+
+a[href*="netlify.com"][style*="position: fixed"],
+div[id*="netlify-drawer"],
+iframe[src*="netlify.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
