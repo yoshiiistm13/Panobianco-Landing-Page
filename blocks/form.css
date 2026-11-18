@@ -145,7 +145,7 @@ input::placeholder {
 }
 
 .security{
-    opacity: 0.8;
+    
 }
 
 select{
@@ -208,17 +208,20 @@ select::placeholder{
     }
 
     .security__container{
-        max-width: 48rem;
+        
+        justify-content: center;
+        max-width: 100%;
         margin: 1.5rem auto 0;
         padding: 1rem 1.25rem;
         gap: 1rem;
-        align-items: flex-start;
+        
         font-size: 1rem;
         line-height: 1.6;
-        text-align: left;
-        background-color: rgba(255, 255, 255, 0.04);
-        border-left: 3px solid var(--primary-color);
+        text-align: center;
+        background-color: var(--primary-color);
+        
         border-radius: 8px;
+        
     }
 
     .security__container img{
@@ -228,6 +231,8 @@ select::placeholder{
     }
 
     .security{
-        font-size: inherit;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
     }
 }
