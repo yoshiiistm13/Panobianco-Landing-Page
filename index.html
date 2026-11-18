@@ -294,23 +294,32 @@ LLENO DE OPORTUNIDADES</h4>
                     <p class="form__description">Completa tus datos y un asesor experto se pondrá en contacto contigo y explicarte los detalles de la franquicia Panobianco Gym.</p>
                 </div>
                 <div class="form__card-general">
-                    <form id="formulario__panobianco" class="form__card" action="">
+                    <form id="formulario__panobianco" class="form__card" name="panobianco-leads" method="POST" data-netlify="true">
+                        
+                        <!-- Campo oculto obligatorio para Netlify Forms -->
+                        <input type="hidden" name="form-name" value="panobianco-leads" />
+
                         <label for="name">NOMBRE COMPLETO*</label>
-                        <input id="name" class="input__name" type="text" required placeholder="Ej. Carlos Mendez" minlength="8">
+                        <input id="name" name="name" class="input__name" type="text" required placeholder="Ej. Carlos Mendez" minlength="8">
+                        
                         <label for="mail">CORREO ELECTRÓNICO*</label>
-                        <input id="mail" class="input__mail" type="email" required placeholder="carlos@empresa.com">
+                        <input id="mail" name="email" class="input__mail" type="email" required placeholder="carlos@empresa.com">
+                        
                         <label for="tel">TELÉFONO / WHATSAPP (+52) *</label>
-                        <input id="tel" class="input__tel" type="tel" required placeholder="+52 55 1234 5678">
+                        <input id="tel" name="phone" class="input__tel" type="tel" required placeholder="+52 55 1234 5678">
+                        
                         <label for="city">CIUDAD / ESTADO DE INTERÉS *</label>
-                        <input id="city" class="input__city" type="text" required placeholder="Ej. CDMX, Puebla, Guadalajara, Monterrey">
+                        <input id="city" name="city" class="input__city" type="text" required placeholder="Ej. CDMX, Puebla, Guadalajara, Monterrey">
+                        
                         <label for="capital">CAPITAL DISPONIBLE PARA INVERSIÓN *</label>
-                        <select id="capital" class="input__capital"  required placeholder="Seleccione un rango estimado">
+                        <select id="capital" name="capital" class="input__capital" required>
                             <option value="" disabled selected>Seleccione un rango estimado</option>
                             <option value="$8M - 9M">$8,000,000 - $9,000,000</option>
                             <option value="9M - 10M">$9,000,000 - $10,000,000</option>
                             <option value="10M - +10M">$10,000,000 - + $10,000,000</option>
                         </select>
-                        <button type="submit" class="form__btn" >Enviar Solicitud</button>
+                        
+                        <button type="submit" class="form__btn">Enviar Solicitud</button>
                     </form>
                 </div>
                 <br>

@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #ff6100;
+    --secondary-color: #f5f5f5;
+    --background-color: #0c0c0c;
+    --card-color: #1b1b1b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body.agradecimiento {
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem 1.25rem;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(ellipse at 50% 42%, #202020 0, var(--background-color) 68%);
+    color: var(--secondary-color);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.agradecimiento__contenido {
+    width: min(100%, 680px);
+    text-align: center;
+}
+
+.agradecimiento__marca {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.agradecimiento__marca img {
+    display: block;
+    width: min(70vw, 260px);
+    height: auto;
+}
+
+.agradecimiento__tarjeta {
+    padding: clamp(2rem, 7vw, 4rem);
+    border: 1px solid rgba(255, 97, 0, 0.55);
+    border-radius: 16px;
+    background: rgba(27, 27, 27, 0.94);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.agradecimiento__icono {
+    display: grid;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 1.25rem;
+    place-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.agradecimiento__eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.agradecimiento__tarjeta h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: clamp(2.5rem, 9vw, 4rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.agradecimiento__mensaje {
+    max-width: 470px;
+    margin: 1rem auto 1.75rem;
+    color: var(--secondary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.agradecimiento__boton {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.agradecimiento__boton:hover,
+.agradecimiento__boton:focus-visible {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.agradecimiento__pie {
+    margin: 1.5rem 0 0;
+    color: rgba(245, 245, 245, 0.65);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .agradecimiento__boton {
+        transition: none;
+    }
+}
