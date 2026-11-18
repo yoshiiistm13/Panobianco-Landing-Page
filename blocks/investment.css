@@ -127,7 +127,6 @@
     }
 
     .investment__img img {
-        
         width: min(100%, 22rem);
         max-width: 100%;
         height: auto;
