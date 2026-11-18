@@ -135,7 +135,10 @@
         object-fit: cover;
         box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
     }
+    
 }
+
+
 
 @media (min-width: 1024px) {
     .investment {
@@ -150,8 +153,35 @@
         max-width: none;
     }
 
-    .investment__card{
-        padding: 1rem 
+    .investment__card {
+    position: relative; /* Necesario para posicionar el borde animado */
+    padding: 2rem;
+    border-radius: 12px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Oculta cualquier exceso del borde animado */
+    }
+
+    .investment__card::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Ocupa todo el tamaño de la tarjeta */
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: clip-path 0.5s cubic-bezier(0.1, 0.9, 0.2, 1);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    pointer-events: none;
+    }
+
+    .investment__card:hover {
+        background-color: #1a1a1a;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .investment__card:hover::before {
+    border-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .investment__img{
