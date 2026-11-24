@@ -413,17 +413,21 @@
                         <!-- Campo oculto obligatorio para Netlify Forms -->
                         <input type="hidden" name="form-name" value="panobianco-leads" />
 
+                        <p id="form-error" class="form__error" role="alert" aria-live="polite" hidden>
+                            Revisa los campos marcados e intenta de nuevo.
+                        </p>
+
                         <label for="name">NOMBRE COMPLETO*</label>
-                        <input id="name" name="name" class="input__name" type="text" required placeholder="Ej. Carlos Mendez" minlength="8">
+                        <input id="name" name="name" class="input__name" type="text" required autocomplete="name" maxlength="100" placeholder="Ej. Carlos Mendez">
                         
                         <label for="mail">CORREO ELECTRÓNICO*</label>
-                        <input id="mail" name="email" class="input__mail" type="email" required placeholder="carlos@empresa.com">
+                        <input id="mail" name="email" class="input__mail" type="email" required autocomplete="email" maxlength="254" placeholder="carlos@empresa.com">
                         
                         <label for="tel">TELÉFONO / WHATSAPP (+52) *</label>
-                        <input id="tel" name="phone" class="input__tel" type="tel" inputmode="tel" pattern="[\+0-9\s\-\(\)]{10,18}" title="Ingresa un número válido de 10 dígitos (ej. +52 55 1234 5678)" required placeholder="+52 55 1234 5678">
+                        <input id="tel" name="phone" class="input__tel" type="tel" inputmode="tel" autocomplete="tel" pattern="(?:\+?52\s?1?\s?)?(?:[0-9][\s()-]*){10}" title="Ingresa 10 dígitos, con prefijo +52 opcional (ej. +52 55 1234 5678)." maxlength="25" required placeholder="+52 55 1234 5678">
                         
                         <label for="city">CIUDAD / ESTADO DE INTERÉS *</label>
-                        <input id="city" name="city" class="input__city" type="text" required placeholder="Ej. CDMX, Puebla, Guadalajara, Monterrey">
+                        <input id="city" name="city" class="input__city" type="text" autocomplete="address-level2" maxlength="100" required placeholder="Ej. CDMX, Puebla, Guadalajara, Monterrey">
                         
                         <label for="capital">CAPITAL DISPONIBLE PARA INVERSIÓN *</label>
                         <select id="capital" name="capital" class="input__capital" required>
@@ -434,8 +438,8 @@
                         </select>
 
                         <div data-netlify-recaptcha="true"></div>
-                        <p id="captcha-error" role="alert" style="display: none; color: #ff6b6b; font-size: 0.85rem; margin: 0.25rem 0 0;">
-                            Por favor, marca la casilla "No soy un robot" antes de enviar.
+                        <p id="captcha-error" class="form__error" role="alert" aria-live="polite" hidden>
+                            Por favor, completa la verificación CAPTCHA antes de enviar.
                         </p>
                         <button type="submit" class="form__btn">Enviar Solicitud</button>
                         

@@ -67,9 +67,34 @@ padding: 3rem 4rem;
     
 }
 
+.form__error{
+    color: #ff6b6b;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.25rem 0;
+}
+
+.form__error[hidden]{
+    display: none;
+}
+
 .form__card input{
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+.form__card input.is-invalid,
+.form__card select.is-invalid{
+    outline: 2px solid #ff6b6b;
+    outline-offset: 1px;
+}
+
+.form__card input:focus-visible,
+.form__card select:focus-visible,
+.form__btn:focus-visible{
+    outline: 2px solid #fff;
+    outline-offset: 3px;
 }
 
 .form__btn{
