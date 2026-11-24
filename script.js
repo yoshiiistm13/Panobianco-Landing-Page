@@ -114,16 +114,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const recaptchaResponse = formPanobianco.querySelector('[name="g-recaptcha-response"]');
-      const captchaContainer = formPanobianco.querySelector('[data-netlify-recaptcha="true"]');
-      const captchaFrame = captchaContainer && captchaContainer.querySelector('iframe');
+      const recaptchaResponse = formPanobianco.querySelector('[name="g-recaptcha-response"]')
+        || document.querySelector('[name="g-recaptcha-response"]');
+      const captchaFrame = document.querySelector(
+        'iframe[title*="reCAPTCHA"], iframe[src*="recaptcha"]'
+      );
       const widgetToken = recaptchaResponse && recaptchaResponse.value.trim()
         ? recaptchaResponse.value.trim()
         : (captchaFrame && window.grecaptcha && typeof window.grecaptcha.getResponse === 'function'
           ? window.grecaptcha.getResponse()
           : '');
 
-      if (!captchaContainer || !widgetToken) {
+      if (!widgetToken) {
         e.preventDefault();
         if (captchaError) {
           captchaError.textContent = captchaFrame
