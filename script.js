@@ -1,15 +1,26 @@
 // Remover el badge "Powered by Netlify" si es inyectado en el DOM
 document.addEventListener('DOMContentLoaded', () => {
-  const removeNetlifyBadge = () => {
-    const elements = document.querySelectorAll('a[href*="utm_source=powered-by-netlify"], a[href*="netlify.com"]');
-    elements.forEach(el => {
-      // Verificamos que sea el botón flotante fijo en pantalla y no un link normal
-      const style = window.getComputedStyle(el);
-      if (style.position === 'fixed' || el.textContent.toLowerCase().includes('powered by netlify')) {
-        el.remove();
+  const formPanobianco = document.getElementById('formulario__panobianco');
+  const captchaError = document.getElementById('captcha-error');
+
+  if (formPanobianco) {
+    formPanobianco.addEventListener('submit', (e) => {
+      const recaptchaResponse = formPanobianco.querySelector('[name="g-recaptcha-response"]');
+
+      if (recaptchaResponse && !recaptchaResponse.value) {
+        e.preventDefault();
+        if (captchaError) {
+          captchaError.style.display = 'block';
+        }
+        return;
+      }
+
+      if (captchaError) {
+        captchaError.style.display = 'none';
       }
     });
-  };
+  }
+});
 
   // Ejecutar al cargar y observar si Netlify lo inyecta después
   removeNetlifyBadge();
