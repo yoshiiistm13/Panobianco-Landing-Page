@@ -194,6 +194,24 @@ select::placeholder{
     margin: 0.75rem 0 0.25rem;
 }
 
+.captcha {
+    width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 767px) {
+    .form__card {
+        max-width: 358px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .captcha > div,
+    .captcha > iframe {
+        zoom: clamp(0.7, calc((100vw - 94px) / 304px), 1);
+    }
+}
+
 @media (min-width:768px){
     .security__container{
     padding: 2rem 2rem;
